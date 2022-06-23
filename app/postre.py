@@ -1,4 +1,4 @@
-from alimento import Alimento
+from app.alimento import Alimento
 
 
 class Postre(Alimento):
