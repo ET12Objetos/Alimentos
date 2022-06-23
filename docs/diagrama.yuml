@@ -1,0 +1,14 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Menu|platoPrincipal;bebida;postre|armarMenu();]++->[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]
+[Menu|platoPrincipal;bebida;postre|armarMenu();]++->[Bebida]
+[Menu|platoPrincipal;bebida;postre|armarMenu();]++->[Postre]
+
+[Alimento|nombre;precio]^[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]
+[Alimento|nombre;precio]^[Bebida]
+[Alimento|nombre;precio]^[Postre]
+
+[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Proteina]
+[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Acompaniamiento]
