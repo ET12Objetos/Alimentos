@@ -10,5 +10,10 @@
 [Alimento|nombre;precio]^[Bebida]
 [Alimento|nombre;precio]^[Postre]
 
-[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Proteina]
-[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Acompaniamiento]
+[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Proteina|nombre]
+[Principal|proteina;acompaniamiento|armarPlatoPrincipal();]++->[Acompaniamiento|nombre]
+
+[Proteina|nombre]^[Carne]
+[Proteina|nombre]^[Pollo]
+[Acompaniamiento|nombre]^[Ensalada]
+[Acompaniamiento|nombre]^[Sopa]
